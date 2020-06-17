@@ -31,9 +31,9 @@ isValid(){
   let side3 = this.arr[2]
 
   if (side1 + side2 > side3 && side1+side3>side2 && side2+side3>side1){
-    return 'this is valid'
+    return true
   }else{
-    return 'this is invalid'
+    return false
   }
 
 }
