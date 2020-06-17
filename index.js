@@ -5,11 +5,11 @@ class Polygon {
     this.arr= arr;
   }
 
-  countSides (){
+  get countSides (){
     return this.arr.length ;
   }
 
-  perimeter(){
+  get perimeter(){
     let sum =0
     for (const int of this.arr){
       sum+=int;
