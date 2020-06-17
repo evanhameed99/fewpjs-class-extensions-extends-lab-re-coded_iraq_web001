@@ -59,13 +59,11 @@ class Square  extends Polygon{
   }
 
    get area(){
-    if(this.isValid() === true){
+
       let side = this.arr[0];
       return side **2;
-    }
-    else{
-      return 'the given shape is not an exact square!!'
-    }
+
+
   }
 }
 // const muraba3 = new Square([5,5,5,5])
