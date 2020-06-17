@@ -25,7 +25,7 @@ class Polygon {
 
 
 class Triangle extends Polygon{
-isValid(){
+ get isValid(){
   let side1 = this.arr[0]
   let side2 = this.arr[1]
   let side3 = this.arr[2]
@@ -48,7 +48,7 @@ isValid(){
 
 class Square  extends Polygon{
 
-  isValid(){
+  get isValid(){
     let first = this.arr[0];
   for (let i = 1; i < this.arr.length; i++) {
     if (first !== this.arr[i]) {
@@ -58,7 +58,7 @@ class Square  extends Polygon{
   return true;
   }
 
-  area(){
+   get area(){
     if(this.isValid() === true){
       let side = this.arr[0];
       return side **2;
